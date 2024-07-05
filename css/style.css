@@ -1945,6 +1945,8 @@ a:hover {
   margin-bottom: 40px;
   font-weight: 300;
 }
+
+/* TODO: Change this */
 .full-media-content .inner-content a {
   height: 58px;
   line-height: 54px;
@@ -1956,8 +1958,9 @@ a:hover {
   padding: 0 50px;
 }
 .full-media-content .inner-content a:hover {
-  background: #fff;
-  color: #000;
+  background: var(--color-primary);
+  color: #fff;
+  border-color: var(--color-primary);
   text-decoration: none;
 }
 
@@ -2455,7 +2458,7 @@ a:hover {
   list-style: none;
 }
 .footer ul li a {
-  font-size: 12px;
+  font-size: var(--font-size-social-media);
   color: #fff;
 }
 .footer ul li a:hover {
