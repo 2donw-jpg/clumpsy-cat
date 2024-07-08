@@ -1491,7 +1491,7 @@ a:hover {
   overflow: hidden;
   background: #000;
 }
-.video-bg video {
+.video-bg img {
   min-height: 100%;
   min-width: 100%;
   position: absolute;
@@ -1889,7 +1889,6 @@ a:hover {
   font-size: 13px;
 }
 
-/* FULL MEDIA CONTENT */
 .full-media-content {
   width: 100%;
   display: flex;
@@ -1897,32 +1896,40 @@ a:hover {
   background-size: cover !important;
   position: relative;
 }
+
 .full-media-content .video-bg video {
   opacity: 1;
 }
+
 .full-media-content .sides {
   flex: 1;
   padding: 150px 0;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
   position: relative;
 }
+
 .full-media-content .sides figure {
-  width: 50%;
+  width: 75%;
   position: relative;
   z-index: 2;
-  float: right;
+
   margin-bottom: 0;
-  margin-right: -40px;
-  border: 10px solid #fff;
+  margin-right: 0;
+  text-align: center; 
 }
+
 .full-media-content .sides figure img {
   width: 100%;
 }
+
 .full-media-content .inner-content {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   flex-direction: column;
-  background: rgba(0, 0, 0, 0.7);
+  background: #171819;
   color: #fff;
 }
 .full-media-content .inner-content .inner {
@@ -1937,7 +1944,7 @@ a:hover {
 }
 .full-media-content .inner-content h2 {
   font-weight: 800;
-  font-size: 60px;
+  font-size: 50px;
   margin-bottom: 40px;
 }
 .full-media-content .inner-content p {
@@ -1963,6 +1970,77 @@ a:hover {
   border-color: var(--color-primary);
   text-decoration: none;
 }
+
+
+/* CATEGORIES*/
+
+.categories{
+  background-color: #f1f1f1;
+  width: 100%;
+  padding: 50px 0;
+}
+
+.categories h2{
+  text-align: center;
+  font-weight: 600;
+}
+
+.products-grid {
+  background-color: #f1f1f1;
+  width: 100%;
+  padding: 50px;
+}
+
+.product-card {
+  background-color: #f1f1f1;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: 0.25s ease-in-out; /* Simplified transition for all properties */
+  cursor: pointer;
+}
+
+.product-card:hover {
+  transform: translateY(-5px); /* Example transformation on hover */
+}
+
+.product-card__image {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 10px;
+  transition: transform 0.25s ease-in-out; /* Apply transition to transform property */
+}
+
+.product-card__image:hover {
+  transform: scale(1.1); /* Example transformation on hover */
+}
+
+.product-card__info {
+  text-align: center;
+  transition: opacity 0.25s ease-in-out; /* Example transition for opacity */
+}
+
+.product-card__name {
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.25s ease-in-out; /* Apply transition to color property */
+}
+
+.product-card__name:hover {
+  color: var(--color-primary); /* Example color change on hover */
+}
+
+.product-card__desc {
+  font-size: 14px;
+  color: #666;
+}
+
+
+
+
+
+
 
 /* INTRODCUTION */
 .introduction {
@@ -2203,7 +2281,7 @@ a:hover {
 .news .post .post-content .post-date {
   display: block;
   margin-bottom: 20px;
-  color: #color-green;
+  color: var(--color-primary);
   font-weight: 600;
 }
 .news .post .post-content p {
@@ -2424,7 +2502,7 @@ a:hover {
   width: 100%;
   display: flex;
   color: #fff;
-  background: url(../images/anim-hero.gif) center no-repeat #131313;
+  background: center no-repeat #131313;
   text-align: center;
   padding-top: 150px;
   padding-bottom: 50px;
