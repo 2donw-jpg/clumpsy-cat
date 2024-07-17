@@ -2,36 +2,19 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="format-detection" content="telephone=no">
-<meta name="theme-color" content="#33a16e"/>
-<title>Unicord | Creative Portfolio for Freelancers & Agencies</title>
-<meta name="author" content="Themezinho">
-<meta name="description" content="Unicord | Creative Portfolio for Freelancers & Agencies">
-<meta name="keywords" content="creative, works, showcase, portfolio, highlight, projects, parallax, agency, digital, studio, css, animation, transition, svg, html, css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clumpsy Cat | Bakery and Recipes</title>
+<meta name="description" content="Clumpsy Cat | Bakery and Recipes">
+<meta name="keywords" content="Bakery, Recipes, Clumsy Cat, Baking Tips, Dessert Recipes, Bread Recipes, Cake Recipes, Cookie Recipes, Pastry Recipes, Baking Techniques, Baking Ingredients, Baking Tutorials, Baking for Beginners, Home Baking, Sweet Treats, Baking Blog, Cooking Tips, Homemade Recipes, Kitchen Tips, Delicious Desserts">
 
-<!-- SOCIAL MEDIA META -->
-<meta property="og:description" content="Unicord | Creative Portfolio for Freelancers & Agencies">
-<meta property="og:image" content="http://www.themezinho.net/unicord/preview.png">
-<meta property="og:site_name" content="unicord">
-<meta property="og:title" content="Unicord">
-<meta property="og:type" content="website">
-<meta property="og:url" content="http://www.themezinho.net/unicord">
-
-<!-- TWITTER META -->
-<meta name="twitter:card" content="summary">
-<meta name="twitter:site" content="@unicord">
-<meta name="twitter:creator" content="@unicord">
-<meta name="twitter:title" content="unicord">
-<meta name="twitter:description" content="Unicord | Creative Portfolio for Freelancers & Agencies">
-<meta name="twitter:image" content="http://www.themezinho.net/unicord/preview.png">
-
+<!--TODO: Change the icons-->
 <!-- FAVICON FILES -->
 <link href="ico/apple-touch-icon-144-precomposed.png" rel="apple-touch-icon" sizes="144x144">
 <link href="ico/apple-touch-icon-114-precomposed.png" rel="apple-touch-icon" sizes="114x114">
 <link href="ico/apple-touch-icon-72-precomposed.png" rel="apple-touch-icon" sizes="72x72">
 <link href="ico/apple-touch-icon-57-precomposed.png" rel="apple-touch-icon">
 <link href="ico/favicon.png" rel="shortcut icon">
+
 
 <!-- CSS FILES -->
 <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -40,7 +23,12 @@
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/style.css">
 </head>
+
+
 <body>
+
+
+<!-- TODO: Change the preloader image and colors -->
 <div class="preloader">
   <div class="inner">
     <div class="loader">
@@ -55,51 +43,48 @@
   <!-- end inner --> 
 </div>
 <!-- end preloader -->
+
+
+
 <div class="transition-overlay">
-  <div class="green-layer"></div>
+  <div class="red-layer"></div>
   <div class="black-layer"></div>
 </div>
 <!-- end transition-overlay -->
+
+
+
+<!-- *NAV MENU* -->
 <nav class="navigation-menu">
-  <div class="green-layer"></div>
+  <div class="red-layer"></div>
   <div class="black-layer"></div>
   <div class="inner">
     <ul>
-      <li><a href="#">Start</a>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">Menu</a>
       	 <ul>
-          <li><a href="index.html">Slider</a></li>
-          <li><a href="index-video-bg.html">Video BG</a></li>
-          <li><a href="index-particles.html">Particles</a></li>
-          <li><a href="index-motion-blur.html">Motion Blur</a></li>
-          <li><a href="index-animation.html">Animation</a></li>
+          <li><a href="menu.html#cakes">Cakes</a></li>
+          <li><a href="menu.html#cookies">Cookies</a></li>
+          <li><a href="menu.html#cupcakes">Cupcakes</a></li>
+          <li><a href="menu.html#pies">Pies</a></li>
         </ul>
       </li>
-      <li><a href="unicord.html">Unicord</a></li>
-      <li><a href="#">Showcases</a>
-        <ul>
-          <li><a href="showcases-four-cols.html">4 Columns</a></li>
-          <li><a href="showcases-three-cols.html">3 Columns</a></li>
-          <li><a href="showcases-two-cols.html">2 Columns</a></li>
-        </ul>
-      </li>
-      <li><a href="news.html">News</a></li>
-      <li><a href="say-hello.html">Say Hello</a></li>
+      <li><a href="recipes.html">Cats</a></li>
+      <li><a href="about-us.html">About us</a></li>
     </ul>
-    <address>
-    Contornio Ave Kunsgatan 4<br>
-    41247 Luxembord<br>
-    074-753 5875
-    </address>
   </div>
   <!-- end inner --> 
 </nav>
 <!-- end navigation-menu -->
+
+
+<!-- *NAV BAR* -->
   <nav class="navbar">
-    <div class="logo"> <a href="index.html"><img src="images/logo.png" alt="Image"></a> </div>
+    <div class="logo"> <a href="index.html"><img src="ico/favicon.png" alt="Image"></a> </div>
     <!-- end logo -->
-    <div class="email-us">Say <a href="#"><span>hello</span>@unicord.com</a></div>
+    <div class="short-menu" ><a href="#" class="active">BAKERY</a>  |  <a href="#">CATS</a></div>
     <!-- end email-us -->
-    <div class="languages"> <a href="#" class="active">EN</a> <a href="#">RU</a> </div>
+    <div class="languages"> <a href="#" class="active">EN</a> <a href="#">ES</a> </div>
     <!-- end languages -->
     <div class="sandwich-nav"> <b>MENU</b>
       <div class="sandwich-btn circle" id="sandwich-btn" data-dist="7"> <span></span> <span></span> </div>
@@ -109,142 +94,154 @@
     <!-- end sandwich-nav --> 
   </nav>
   <!-- end navbar -->
-<header class="page-header">
- <div class="video-bg">
- 	<video src="videos/video.mp4" autoplay muted loop></video>
- </div>
- <!-- end video-bg -->
- <div class="inner">
- 	<h2 data-text="SAY HELLO">SAY HELLO</h2>
- 	<p>We work in an integral manner and address projects in the following dimensions.</p>
- </div>
- <!-- end inner -->
+
+
+<!-- *HEADER* -->
+<header class="header">
+ <div class="video-hero">
+  <div class="video-bg">
+  	<video src="videos/header.mp4" autoplay loop muted></video>
+  </div>
+  <!-- end video-bg -->
+
+  <div class="inner">
+  	<h1>Clumpsy Cat</h1>
+  	<h5>Every order taken with care</h5>
+  	<a href="#">ORDER NOW</a>
+  </div>
+  <!-- end inner -->
+  </div>
+  <!-- end video-hero -->
+
   <ul class="social-media">
-    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-    <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+    <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+    <li><a href="https://www.x.com/" target="_blank"><i class="fa fa-twitter"></i></a></li>
+    <li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+    <li><a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube-play"></i></a></li>
   </ul>
-  <div class="scroll-down"><b>SCROLL DOWN</b><span></span></div>
-  <!-- end scroll-down --> 
 </header>
-<!-- end page-header -->
-<div class="page-header-spacing"></div>
-<!-- end page-header-spacing -->
+<!-- end header -->
+
+
+
+
+<div class="header-spacing"></div>
+<!-- end header-spacing -->
+
+
+
+
+
 <main>
-<section class="say-hello">
-	<div class="container">
-	<div class="row">
-	<div class="col-12">
-		<h3>We’d love to hear from you.<br>
-Let's talk about it!</h3>
-	</div>
-		<!-- end col-12 -->
-	<div class="col-md-6">
-	<div class="contact-box">
-		<span>Phone :</span>
-		<a href="#">+38 044 364 55 19</a>
-		</div>
-		<!-- end contact-box -->
-	</div>
-	<!-- end col-6 -->
-	<div class="col-md-6">
-	<div class="contact-box">
-		<span>E-mail :</span>
-		<a href="#">+38 044 364 55 19</a>
-		</div>
-		<!-- end contact-box -->
-	</div>
-	<!-- end col-6 -->
-	<div class="col-12">
-	<div class="contact-box">
-		<span>Address :</span>
-   <p>
-    Contornio Ave Kunsgatan 4<br>
-    41247 Luxembord<br>
-    074-753 5875
-	   </p>
-	   <a href="#" class="map-link" data-toggle="modal" data-target="#map-box">Click for map</a>
-		</div>
-		<!-- end contact-box -->
-	</div>
-	<!-- end col-12 -->
-	<div class="col-12">
-		<form class="row inner" id="contact" name="contact" method="post">
-        <div class="form-group col-sm-6 col-12">
-          <label><span>Your name</span></label>
-          <input type="text" name="name" id="name" required>
+
+
+  <!-- *FEATURE CONTENT* -->
+  <section class="custom-full-media-content">
+    <div class="full-media-content bg-image">
+    <!-- end sides -->
+    <div class="sides inner-content" style="background-color: transparent;">
+      <div class="inner wow fadeInUp" >
+        <h2>MISSION</h2>
+        <p style="font-size: 20px;">Our mission is to bring joy and satisfaction through our products, making us the preferred option for those looking for sweet indulgences of high quality.</p>
+        <hr>
+        <h2>VISION</h2>
+        <p style="font-size: 20px;">Our vision is to be leaders in the baking industry with our exceptional cupcakes, making us the preferred option of our clients.</p>
+      </div>
+      
+    <!-- end sides -->
+  </div> 
+  </section>
+<!-- end works -->
+
+
+<section class="features-content">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5 wow fadeInLeft">
+        <h2>OBJECTIVES</h2>
+      </div>
+      <!-- end col-5 -->
+      <div class="col-lg-7">
+        <div class="row inner">
+          <div class="col-md-4 wow fadeInUp">
+            <h4>QUALITY</h4>
+            <p>Ensure excellence in every aspect of our cupcakes, using fresh and high-quality ingredients in all our preparations.</p>
+          </div>
+          <!-- end col-4 -->
+          <div class="col-md-4 wow fadeInUp">
+            <h4>INNOVATION</h4>
+            <p>Promote creativity and innovation in the development of new cupcake flavors, designs, and concepts.</p>
+          </div>
+          <!-- end col-4 -->
+          <div class="col-md-4 wow fadeInUp">
+            <h4>REASONABLE PRICES</h4>
+            <p>Offer high-quality cupcakes at affordable prices for our clients.</p>
+          </div>
+          <!-- end col-4 --> 
         </div>
-        <!-- end form-group -->
-        <div class="form-group col-sm-6 col-12">
-          <label><span>Your surname</span></label>
-          <input type="text" name="surname" id="surname" required>
-        </div>
-        <!-- end form-group -->
-        <div class="form-group col-sm-6 col-12">
-          <label><span>Your e-mail</span></label>
-          <input type="text" name="email" id="email" required>
-        </div>
-        <!-- end form-group -->
-        <div class="form-group col-sm-6 col-12">
-          <label><span>Subject</span></label>
-          <input type="text" name="subject" id="subject" required>
-        </div>
-        <!-- end form-group -->
-        <div class="form-group col-12">
-          <label><span>Your message</span></label>
-          <textarea name="message" id="message" required></textarea>
-        </div>
-        <!-- end form-group -->
-        <div class="form-group col-12">
-          <button id="submit" type="submit" name="submit">SUBMIT</button>
-        </div>
-        <!-- end form-group -->
-      </form>
-      <!-- end form -->
-       <div id="success" class="alert alert-success" role="alert"> Your message was sent successfully! We will be in touch as soon as we can. </div>
-        <!-- end success -->
-        <div id="error" class="alert alert-danger" role="alert"> Something went wrong, try refreshing and submitting the form again. </div>
-        <!-- end error --> 
-	</div>
-	<!-- end col-12 -->
-	</div>
-		<!-- end row -->
-	</div>
-	<!-- end container -->
+        <!-- end row inner --> 
+      </div>
+      <!-- end col-7 --> 
+    </div>
+    <!-- end row --> 
+  </div>
+  <!-- end container --> 
 </section>
-<!-- end say-hello -->
+
+<section class="features-content">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-9">
+        <div class="row inner">
+
+          <div class="col-md-4 wow fadeInUp">
+            <h4>TRANSPARENCY</h4>
+            <p>We are committed to maintaining honest and open communication with our clients, suppliers, and employees.</p>
+          </div>
+
+
+          <div class="col-md-4 wow fadeInUp">
+            <h4>INTEGRITY</h4>
+            <p>We act honestly and adhere to high ethical standards in all our operations, from the selection of ingredients to the delivery of our products.</p>
+          </div>
+
+          <div class="col-md-4 wow fadeInUp">
+            <h4>PASSION</h4>
+            <p>Our passion for baking is reflected in every cupcake we make.</p>
+          </div>
+
+
+        </div>
+      </div>
+      <div class="col-lg-3 wow fadeInRight">
+        <h2>VALUES</h2>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 <footer class="footer">
-  <div class="container"> 
-   <img src="images/logo.png" alt="Image">
-    <h2>Don't be shy and<br>
-      talk to us?</h2>
-    <h5>Say hello@unicord.com.ua </h5>
+  <div class="container wow fadeIn"> 
+
     <ul>
-      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-      <li><a href="#"><i class="fa fa-behance"></i></a></li>
-      <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-      <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+      <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+    <li><a href="https://www.x.com/" target="_blank"><i class="fa fa-twitter"></i></a></li>
+    <li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+    <li><a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube-play"></i></a></li>
     </ul>
-    <span>© 2018 Unicord | All Rights Reserved</span> </div>
+  
   <!-- end container --> 
 </footer>
 <!-- end footer --> 
+
+
+
 </main>
 <!-- end main -->
-<div id="map-box" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-			<div class="modal-dialog" role="document">
-    <div class="modal-content">
-        <div id="map"></div>
-          <i class="fa fa-close close" data-dismiss="modal" aria-label="Close"></i>
-				</div>
-				<!--end modal-content -->
-			</div>
-			<!-- end modal-dialog -->
-		</div>
-		<!-- end map -->
+
+
+
 <audio id="link" src="audio/link.mp3" preload="auto"></audio>
 <audio id="hover-audio" src="audio/hover.mp3" preload="auto"></audio>
 
@@ -264,12 +261,6 @@ Let's talk about it!</h3>
 <script src='js/jquery.parallax.min.js'></script>  
 <script src='js/motion.blur.js'></script> 
 <script src="js/scripts.js"></script> 
-
-<script src="js/contact.form.min.js"></script> 
-<script src="js/jquery.form.min.js"></script> 
-<script src="js/jquery.validate.min.js"></script> 
-<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCRrJ_VQvTCWM0bv_ZpLfm8j5TW-yUhX9E"></script> 
-<script src="js/googlemaps.min.js"></script>
 
 </body>
 </html>
