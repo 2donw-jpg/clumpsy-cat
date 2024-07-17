@@ -112,6 +112,81 @@
 	});
 	// END JQUERY		
 
+
+
+	 // * Handling the item-showcase selected quantity
+	document.addEventListener('DOMContentLoaded', function() {
+		const quantityOptions = document.querySelectorAll('.quantity-options li');
+	  
+		quantityOptions.forEach(item => {
+		  const radioInput = item.querySelector('input[type="radio"]');
+		  
+		  // Check if the radio button is initially checked
+		  if (radioInput.checked) {
+			item.style.backgroundColor = 'var(--color-primary)';
+			item.style.borderColor = 'var(--color-primary)';
+			item.style.color = '#f1f1f1';
+		  }
+	  
+		  item.addEventListener('click', () => {
+			// Uncheck all radio inputs first
+			document.querySelectorAll('.quantity-options li').forEach(li => {
+			  li.style.backgroundColor = '';
+			  li.style.borderColor = '';
+			  li.style.color = '';
+			});
+			
+			// Check the radio input inside the clicked list item
+			radioInput.checked = true;
+			
+			// Apply styles to the clicked list item
+			item.style.backgroundColor = 'var(--color-primary)';
+			item.style.borderColor = 'var(--color-primary)';
+			item.style.color = '#f1f1f1';
+		  });
+		});
+	  });
+	  
+	  
+
+	  // Slick Slider Initialization Function
+function initializeSlider() {
+	$('.slider').slick({
+	  dots: true,
+	  infinite: true,
+	  slidesToShow: 3,
+	  slidesToScroll: 1,
+	  autoplay: true,
+	  autoplaySpeed: 3000,
+	  responsive: [
+		{
+		  breakpoint: 992,
+		  settings: {
+			slidesToShow: 2
+		  }
+		},
+		{
+		  breakpoint: 576,
+		  settings: {
+			slidesToShow: 1
+		  }
+		}
+	  ]
+	});
+  }
+  
+  // Call initializeSlider function when document is ready
+  $(document).ready(function(){
+	initializeSlider(); // Initialize Slick Slider
+  });
+
+  
+	  
+
+
+
+
+
 	
 	
 	// PRELOADER

@@ -6,8 +6,6 @@
 
   --font-size-navbar:16px;
   --font-size-social-media:20px;
-
-
 }
 
 @import url("https://fonts.googleapis.com/css?family=Fjalla+One|Poppins:300,400,600,800&subset=latin-ext");
@@ -1704,75 +1702,7 @@ a:hover {
   color: #fff;
 }
 
-/* CASE DETAIL */
-.case-details {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  background: #fff;
-}
-.case-details figure {
-  width: 100%;
-  float: left;
-  margin-bottom: 30px;
-}
-.case-details figure img {
-  width: 100%;
-  float: left;
-}
-.case-details h3 {
-  font-size: 80px;
-  font-weight: 800;
-  margin-bottom: 20px;
-  margin-top: 150px;
-}
-.case-details h6 {
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 34px;
-  padding-right: 40%;
-  margin-bottom: 20px;
-}
-.case-details p {
-  color: #808080;
-}
-.case-details p:last-child {
-  margin-bottom: 60px;
-}
-.case-details .case-navbar {
-  width: 100%;
-  float: left;
-  margin-bottom: 0;
-  background: #fff;
-  padding: 0;
-  text-align: center;
-  z-index: 2;
-  position: -webkit-sticky;
-  position: -moz-sticky;
-  position: -ms-sticky;
-  position: -o-sticky;
-  position: sticky;
-  top: 0;
-}
-.case-details .case-navbar ul {
-  width: 100%;
-  float: left;
-  padding: 30px 0;
-  margin: 0;
-}
-.case-details .case-navbar ul li {
-  display: inline-block;
-  margin: 0 30px;
-  padding: 0;
-  list-style: none;
-}
-.case-details .case-navbar ul li a {
-  font-weight: 600;
-}
-.case-details .case-navbar ul li a:hover {
-  color: var(--color-primary);
-  text-decoration: none;
-}
+
 
 /* FEATURES CONTENT */
 .features-content {
@@ -2072,9 +2002,6 @@ a:hover {
 }
 
 /* * Menu*/
-
-/* CATEGORIES*/
-
 .category{
   width: 100%;
   padding: 50px 0;
@@ -2156,29 +2083,115 @@ a:hover {
 
 
 
-.case-details{
+
+
+/* Item showcase */
+
+.case-details {
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
   background-color: #f0f0f0;
+  margin: 0px 30px 20px 30px;
+  
 }
+.case-details figure {
+  width: 100%;
+  float: left;
+  margin-bottom: 30px;
+}
+
+.case-details figure img {
+  width: 100%;
+  float: left;
+}
+
+.case-details h3 {
+  font-size: 60px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.case-details h6 {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 34px;
+  padding-right: 40%;
+  margin-bottom: 20px;
+}
+
+.case-details p {
+  color: #3f3f3f;
+}
+
+.case-details .case-navbar {
+  width: 100%;
+  float: left;
+  margin-bottom: 0;
+  background: #fff;
+  padding: 0;
+  text-align: center;
+  z-index: 2;
+  position: sticky;
+  top: 0;
+}
+
+.case-details .case-navbar ul {
+  width: 100%;
+  float: left;
+  padding: 30px 0;
+  margin: 0;
+}
+
+.case-details .case-navbar ul li {
+  display: inline-block;
+  margin: 0 30px;
+  padding: 0;
+  list-style: none;
+}
+
+.case-details .case-navbar ul li a {
+  font-weight: 600;
+}
+
+.case-details .case-navbar ul li a:hover {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+
+
+
+
 .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.carousel-column {
+.carousel-column,
+.text-column {
+  flex: 1 1 50%;
   padding: 100px 50px;
   margin: 20px 0;
 }
-.text-column {
-  flex: 1 1 50%;
+
+.carousel-indicators .active {
+  background-color: var(--color-primary);
+  padding: 2px;
 }
 
-.carousel-column {
-  flex: 1 1 50%;
+.carousel-indicators{
+  margin: 10px;
+  align-items: center;
 }
 
-.text-column a{
+.carousel-indicators li {
+  background-color: #3e3e3e; /* Inactive indicator color */
+}
+
+
+.text-column a {
   height: 58px;
   line-height: 54px;
   display: inline-block;
@@ -2188,15 +2201,131 @@ a:hover {
   font-weight: 600;
   font-size: 12px;
   padding: 0 50px;
+  margin-right: 20px;
 }
 
-.text-column a:hover{
+.text-column a:hover {
   background: var(--color-primary-darker);
   color: #fff;
-
   border-color: var(--color-primary-darker);
   text-decoration: none;
 }
+
+.quantity-options {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 20px 0;
+  list-style: none;
+}
+
+.quantity-options li {
+  flex: 1;
+  text-align: left;
+  border: 1px solid #121212;
+  padding: 10px;
+  margin: 0 5px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.quantity-options li input[type="radio"] {
+  display: none;
+}
+
+.quantity-options li label {
+  color: #121212;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.quantity-options li:hover {
+  background-color: var(--color-primary-darker);
+  border: 1px solid var(--color-primary-darker);
+}
+
+.quantity-options li:hover label,
+.quantity-options li:hover span {
+  color: #f1f1f1;
+}
+
+.quantity-options li input[type="radio"]:checked ~ label,
+.quantity-options li input[type="radio"]:checked ~ span {
+  color: #f1f1f1;
+}
+
+.quantity-options li input[type="radio"]:checked {
+  background-color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+}
+
+.quantity-options li input[type="radio"]:checked ~ * {
+  background-color: var(--color-primary);
+  color: #f1f1f1;
+  border: 1px solid var(--color-primary);
+}
+
+
+
+/* *Related items*/
+
+/* Product Card */
+.product-card {
+  background-color: #f1f1f1;
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: 0.25s ease-in-out;
+  cursor: pointer;
+  border-radius: 0px;;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  color:var(--color-primary);
+  box-shadow: 0 0 10px var(--color-primary);
+}
+
+.product-card a {
+  text-decoration: none;
+}
+
+.product-card a:hover {
+  text-decoration: none;
+  color:var(--color-primary);
+}
+
+.product-card__image {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 10px;
+  transition: transform 0.25s ease-in-out;
+}
+
+.product-card__image:hover {
+  transform: scale(1.1);
+}
+
+.product-card__info {
+  text-align: center;
+  transition: opacity 0.25s ease-in-out;
+  text-decoration: none;
+}
+
+.product-card__name {
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.25s ease-in-out;
+}
+
+.product-card__name:hover {
+  color: var(--color-primary);
+}
+
+
+
 
 
 
@@ -2990,7 +3119,7 @@ a:hover {
   }
 
   .case-details h3 {
-    font-size: 60px;
+    font-size: 30px;
   }
 
   .case-details h6 {
